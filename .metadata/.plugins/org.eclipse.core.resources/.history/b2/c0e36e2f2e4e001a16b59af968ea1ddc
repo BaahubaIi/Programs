@@ -1,0 +1,30 @@
+package Assignments;
+
+import java.util.Scanner;
+import java.lang.Math;
+public class Kaprekar {
+
+	public static void main(String[] args) {
+		int count=0,sum1=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+		int n=sc.nextInt();
+		int sq=n*n;
+		while(sq>0)
+		{
+			int b=sq%10;
+			count++;
+			sq=sq/10;
+		}
+		System.out.println(count);
+		if(count%2==0)
+		{
+			int den=Math.pow(10,count);
+			int a=sq/
+		}
+		else
+			System.out.println("Not a Kaprekar number");*/
+
+	}
+
+}

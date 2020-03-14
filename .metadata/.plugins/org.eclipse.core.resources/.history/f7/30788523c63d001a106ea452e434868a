@@ -1,0 +1,35 @@
+package Assignments;
+
+import java.util.Scanner;
+
+public class Ass5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int rev=0,count=0;
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter a number");
+		int a=s.nextInt();
+		while(a!=0)
+		{
+			
+			int rem=a%10;
+			rev=(rev*10)+rem;
+			a=a/10;
+			
+			if(rem==0)
+			{
+				count++;
+			}
+			
+		}
+		for(int i=0;i<count;i++)
+		{
+			System.out.println(0);
+		}
+		System.out.println("Reverse of numbers is : "+rev);
+	}
+
+	
+
+}

@@ -1,0 +1,25 @@
+package Assignments;
+
+import java.util.Scanner;
+
+public class VowelCount {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a String");
+		String str=sc.nextLine();
+		String[] s = str.split(" ");
+		
+		for(int i=0;i<s.length;i++)
+		{System.out.println(s[i]);}
+			/*{
+			if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'])
+			{
+				
+			}
+		}*/
+
+	}
+
+}

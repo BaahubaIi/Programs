@@ -1,0 +1,34 @@
+package Assignments;
+
+import java.util.Scanner;
+
+public class Kaprekar {
+
+	public static void main(String[] args) {
+		int sum=0,sum1=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+		int n=sc.nextInt();
+		int sq=n*n;
+		while(n>0)
+		{
+			int a=n%10;
+			sum=sum+a;
+			n=n/10;
+		}
+		while(sq>0)
+		{
+			int b=sq%10;
+			sum1=sum1+b;
+			sq=sq/10;
+		}
+		if(sum==sum1)
+		{
+			System.out.println("Kaprekar number");
+		}
+		else
+			System.out.println("Not a Kaprekar number");
+
+	}
+
+}

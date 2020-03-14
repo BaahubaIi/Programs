@@ -1,0 +1,26 @@
+package Assignments;
+
+import java.util.Scanner;
+
+public class Ass5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int rev=0;
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter a number");
+		int a=s.nextInt();
+		while(a!=0)
+		{
+			
+			int rem=a%10;
+			rev=(rem*10)+rev;
+			a=a/10;
+			
+		}
+		System.out.println("Sum of odd numbers is : "+rev);
+	}
+
+	
+
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login page</title>
+</head>
+<body>
+<iframe src="home.html" style="border:none;height:400px;width:300px;"></iframe>
+<form style=text-align:center;float:right>
+<table>
+<tr><th>Username : </th><td><input type="text" name="uname"></td></tr><br>
+<tr><th>Password : </th><td><input type="password" name="pwd"></td></tr><br>
+<tr><th><input type="button" value="Login"></th></tr>
+</table>
+</form>
+</body>
+</html>

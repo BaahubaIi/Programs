@@ -1,0 +1,51 @@
+package Assignments;
+
+import java.util.Scanner;
+import java.lang.Math;
+public class Kaprekar {
+
+	public static void main(String[] args) {
+		int count=0,sum1=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+		int n=sc.nextInt();
+	    int sq=n*n;
+	    int sq1=sq;
+		while(sq>0)
+		{
+			sq=sq/10;
+			count++;
+			
+		}
+		if(count%2==0)
+		{
+			int den=(int)Math.pow(10,count/2);
+			int a=sq1/den;
+			int b=sq1%den;
+			int c=a+b;
+			if(c==n)
+			{
+				System.out.println("Kaprekar number");
+			}
+			
+		else
+			System.out.println("Not a Kaprekar number");
+		}
+		else
+		{
+			int den=(int)Math.pow(10,count/2);
+			int a=sq1/den;
+			int b=sq1%den;
+			int c=a+b;
+			if(c==n)
+			{
+				System.out.println("Kaprekar number");
+			}
+			
+		else
+			System.out.println("Not a Kaprekar number");
+		}
+
+	}
+
+}
